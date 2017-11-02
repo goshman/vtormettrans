@@ -1,229 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html>
+  <head>
+    <title>ВторМетТранс</title>
     <meta charset="UTF-8">
-    <title>Демонтаж металлоконструкций — ВторМетТранс</title>
-    <meta name="description" content="Демонтаж металлоконструкций - ВторМетТранс">
-    <meta name="keywords" content="стоимость, демонтаж, металлоконструкция, вывоз">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <!-- <link rel="shortcut icon" href="http://progress-m.biz/favicon.ico" type="image/x-icon"> -->
-    <!-- <link rel="icon" href="http://progress-m.biz/favicon.ico" type="image/x-icon"> -->
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
+      body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+      }
     </style>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/adapt.css">
-
-    <!-- <link rel="icon" type="image/png" href="/favicon.png" /> -->
-    <!-- <link rel="stylesheet" href="css/modal-windows.css"> -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-</head>
-<body>
-    <nav>
-        <div id="left-nav-border"></div>
-        <div id="nav">
-            <div id="nav-temp">
-                <a href="/"><div id="logo"></div></a>
-                <div id="nav-table">
-                    <table id="nav-list">
-                        <tr>
-                            <th class="nav-item"><a>УСЛУГИ</a>
-                                <ul>
-                                    <li id="nav-li-1"><a class="link" href="/zvetlom/">Приём цветного<br> лома</a></li>
-                                    <li id="nav-li-2"><a class="link" href="/metallolom/">Приём чёрного<br> лома</a></li>
-                                    <li id="nav-li-6"><a class="link" href="/zakup-jd-loma/">Закуп и реализация<br>Ж/Д лома</a></li>
-                                    <li id="nav-li-3"><a class="link" href="/razdelka-vagonov/">Разделка<br>вагонов</a></li>
-                                    <li id="nav-li-4"><a class="link" href="/gruzoperevozki/">Грузоперевозки<br>автотранспортом</a></li>
-                                    <li id="nav-li-5" class="nav-checked">Демонтаж и вывоз<br>металлоконструкций</li>
-                                </ul>   
-                            </th>
-                            <th class="nav-item"><a href="/staff/">СОТРУДНИКИ</a></th>
-                            <th class="nav-item"><a href="/#docs-h">ДОКУМЕНТЫ</a></th>
-                            <th class="nav-item"><a>КОНТАКТЫ</a></th>
-                        </tr>
-                    </table>
-                </div>
-                <div id="call-number"><a href="tel:+7(919)349-35-55" ><span>+7 (919)</span> 349-35-55</a></div>
-            </div>
-            <div id="another-menu">
-                <div class="services-another">УСЛУГИ<span id="on_off"></span></div>
-                <ul>
-                    <li><a href="/zvetlom/">Прием цветного<br> лома</a></li>
-                    <li><a href="/metallolom/">Прием черного<br> лома</a></li>
-                    <li><a href="/zakup-jd-loma/">Закуп и реализация<br>Ж/Д лома</a></li>
-                    <li><a href="/razdelka-vagonov/">Разделка<br>вагонов</a></li>
-                    <li><a href="/gruzoperevozki/">Грузоперевозки</a></li>
-                    <li><a href="/demontaj/">Демонтаж и вывоз<br>металлоконструкций</a></li>
-                </ul>   
-            </div>
-        </div>
-        <div id="right-nav-border"></div>
-    </nav>
-    <div id="photo-one" data-speed="10" data-maxy="150" data-type="background" style="background: url(img/photo1.jpg) 50% -150px no-repeat fixed;">
-
-        <div id="on-photo">
-            <h1>Демонтаж металлоконструкций</h1>
-        </div>
-    </div>
-    <div id="dignities">
-        <div class="dignity-line">
-            <div class="dignity-img"><div id="first-dignity"></div></div>
-            <div class="dignity-text" id="fdp">
-                <h4>Оперативная работа по договору</h4>
-                <p>Мы рассчитаем цену и мгновенно составим договор демонтажа металлоконструкций</p>
-            </div>
-        </div>
-        <div class="dignity-line">
-            <div class="dignity-img"><div id="second-dignity"></div></div>
-            <div class="dignity-text">
-                <h4>Квалифицированные специалисты</h4>
-                <p>Самостоятельный демонтаж металлоконструкций зачастую очень опасен. Квалифицированные специалисты имеют все необходимые группы допуска к работе</p>
-            </div>
-        </div>
-        <div class="dignity-line">
-            <div class="dignity-img"><div id="third-dignity"></div></div>
-            <div class="dignity-text">
-                <h4>многолетний опыт работы</h4>
-                <p>В результате у нас безупречная деловая репутация</p>
-            </div>
-        </div>
-    </div>
-    <div id="work">
-        <div id="first-step">
-            <div class="btn-h" id="steps-h">ЭТАПЫ РАБОТЫ</div>
-            <div class="circle">1</div>
-            <h3>ВЫ ЗВОНИТЕ МЕНЕДЖЕРУ</h3>
-            <ul>
-                <li>
-                    <div class="buy-cont">Игорь<br>+7 921-252-00-66</div>
-                </li>
-            </ul>
-            <h4>Производится расчет стоимости демонтажа металлоконструкций и вывоза</h4>
-        </div>
-        <div id="second-step">
-            <div class="circle" id="second-circle">2</div>
-            <h3>СОГЛАСОВЫВАЙТЕ ЮРИДИЧЕСКУЮ<br>СТОРОНУ СОТРУДНИЧЕСТВА</h3>
-        </div>
-        <div id="third-step">           
-            <div class="circle" id="third-circle">3</div>
-            <h3>Выясняем расстояние, примерный объем работ</h3>
-        </div>
-        <div id="fourth-step">
-            <div class="circle" id="fourth-circle">4</div>
-            <div id="wrap">
-                <div class="wrap-head">Выезд бригады профессионалов</div>
-                <p>резчик, грузчики</p>
-                <div class="linned"></div>
-                <div class="wrap-head">спецтехника</div>
-                <p>ломовозы, контейнеровозы</p>
-                <div class="linned"></div>
-                <div class="wrap-head">оборудование</div>
-                <p>плазменные установки, газификатор, бензорезы</p>
-                <div class="linned"></div>
-                <h4>производится демонтаж металлоконструкций, осуществляется выгрузка</h4>
-            </div>
-        </div>
-        <div id="fifth-step">
-            <div class="circle" id="fifth-circle">5</div>
-            <h4 id="fifth-step-f-h4">груз Доставляется на базу в Котлас или Череповец</h4>
-            <p>Если договор заключен — выписывается приемо-сдаточный акт и передается в бухгалтерию на оплату</p>
-            <p>Если нет — расчет может быть произведен наличными на площадке</p>
-            <div class="grey-linned"></div>
-            <h4>свяжитесь с нами, заполнив заявку</h4>
-            <form name="contactWithUsForm" onsubmit="checkContactWithUsForm(); return false;">
-                <input name="factory" type="text" placeholder="Предприятие">
-                <input name="fio" type="text" placeholder="Имя и фамилия">
-                <input name="phone" type="text" placeholder="Телефон или e-mail">
-                <div style="float: left; width: 100%;">
-                    <input type="submit" value="Отправить">
-                </div>
-            </form>
-        </div>
-    </div>
-    <div id="delivery" data-speed="45" data-maxy="110" data-type="background" style="background: url(img/photo3.jpg) 50% 0 no-repeat fixed rgb(200, 198, 198); background-size: 100%; background-position: center;">
-
-        <div id="logo-on-photo"></div>
-    </div>
-    <div id="contacts">
-        <form name="contactWithUsForm2" onsubmit="checkContactWithUsForm2(); return false;">
-            <input type="text" name="fio" placeholder="Имя и фамилия"/>
-            <input type="text" name="phone" placeholder="Телефон или e-mail"/>
-                <input type="submit" value="Отправить">
-            <div style="color: white; margin-left: 10px;">Свяжитесь с нами для решения любых вопросов</div>
-        </form>
-        <div id="contacts-temp">
-            <div class="contacts-column" itemscope itemtype="http://schema.org/Organization">
-                <div class="contacts-head" id="contacts-head">Контакты: <span itemprop="name">Прогресс-М</span></div>
-                <div style="clear: both;float: left; ">Адрес</div> <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><p style="color: #bab8b8;  padding-left: 31px;float: left;"><span itemprop="addressLocality"> г. Череповец</span>, <br><span itemprop="streetAddress">ул. Карла Маркса 74-4</span></p></div>
-                <div  style="clear: both;float: left; ">Телефон</div> <p style="color: #bab8b8;  padding-left: 11px;float: left;"><span itemprop="telephone"><a href="tel:8(8202)55-25-37" style="">8 (8202) 55-25-37</a></span></p>
-                <div style="clear: both;float: left; ">Адрес</div> <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><p style="color: #bab8b8;  padding-left: 31px;float: left;"><span itemprop="addressLocality"> г. Котлас</span>, <br><span itemprop="streetAddress">ул. Конституции, 18</span></p></div>
-                <div  style="clear: both;float: left; ">Телефон</div> <p style="color: #bab8b8;  padding-left: 11px;float: left;"><span itemprop="telephone"><a href="tel:8(8183)75-20-64" style="">8 (8183) 75-20-64</a></span></p>
-                <div style="clear: both; float: left;">Почта</div> <p style="color: #bab8b8;  padding-left: 30px;float: left;"><span itemprop="email">office@progress-m.biz</span></p>
-            </div>
-            <div class="contacts-column">
-                <div class="contacts-head">Реквизиты:</div>
-                <ul style="list-style: none;">
-            <li class="docs-20">
-                <div class="docs-ico" style="
-    margin-left: 61px;
-    /* position: relative; */
-"></div>
-    
-                <div class="docs-dl">Скачать</div>
-            </li>
-            </ul>
-            </div>
-        </div>
-    </div>  
-    <div id="footer">
-        <div id="footer-imgs">
-            <ul>
-                <li>
-                    <a href="/zvetlom/"><div class="footer-img-box">
-                        <div id="zero-f-img" class="footer-img"></div>
-                    </div>
-                    <div class="footer-img-head">Приём цветного и<br>нержавеющего лома</div></a>
-                </li>
-                <li>
-                    <a href="/metallolom/"><div class="footer-img-box">
-                        <div id="first-f-img" class="footer-img"></div>
-                    </div>
-                    <div class="footer-img-head">Приём чёрного<br>лома</div></a>
-                </li>
-                <li>
-                    <a href="/zakup-jd-loma/"><div class="footer-img-box">
-                        <div id="second-f-img" class="footer-img"></div>
-                    </div>
-                    <div class="footer-img-head">Закуп и реализация<br>Ж/Д лома</div></a>
-                </li>
-                <li>
-                    <a href="/razdelka-vagonov/"><div class="footer-img-box">
-                        <div id="third-f-img" class="footer-img"></div>
-                    </div>
-                    <div class="footer-img-head">Разделка<br>вагонов</div></a>
-                </li>
-                <li>
-                    <a href="/gruzoperevozki/"><div class="footer-img-box">
-                        <div id="fourth-f-img" class="footer-img"></div>
-                    </div>
-                    <div class="footer-img-head">Грузоперевозки</div></a>
-                </li>
-                <li>
-                    <a href="/demontaj/"><div class="footer-img-box">
-                        <div id="fifth-f-img" class="footer-img"></div>
-                    </div>
-                    <div class="footer-img-head">Демонтаж и вывоз<br>металлокострукций</div></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="copyrights">
-        <div id="copyright">© ООО "ВторМетТранс"</div>
-    </div>
-<script>
-</body>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <th><a href="index.html">ВТОРМЕТТРАНС&nbsp;</a></th>
+        <th><a href="services.html">&nbsp;УСЛУГИ&nbsp;</a></th>
+        <th><a href="docs.html">&nbsp;ДОКУМЕНТЫ&nbsp;</a></th>
+        <th><a href="contacts.html">&nbsp;КОНТАКТЫ&nbsp;</a></th>
+        <th><a href="http://mail.yandex.ru/for/vtormettrans.ru">&nbsp;ПОЧТА</a></th>
+      </tbody>
+    </table>
+    <h2>Услуги</h2>
+    <ul>
+      <li>Разделка вагонов</li>
+      <li>Закупка и реализация железнодорожного лома</li>
+      <li>Демонтаж металлоконструкций</li>
+      <li>Прием черного лома</li>
+      <li>Прием цветного лома</li>
+      <li>Грузоперевозки</li>
+    </ul>
+    <h2>Контакты</h2>
+    <p>+7(919)349-35-55 | mikhail@vtormettrans.ru | Генеральный директор, Лапин Михаил Вячеславович</p>
+    <p>+7(904)804-49-83 | inna@vtormettrans.ru | Главный бухгалтер, Инна Анатольевна</p>
+    <br>
+    <p>Сделано в Челябинске</p>
+  </body>
 </html>
